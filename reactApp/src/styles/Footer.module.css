@@ -1,0 +1,10 @@
+.footer {
+  background-color: rgba(241, 234, 225, 0.29);
+  padding-left: 5em;
+  font-family: "Lato", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}

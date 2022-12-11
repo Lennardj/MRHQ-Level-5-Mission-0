@@ -1,0 +1,113 @@
+.headercontainer,
+.leftsection,
+.rightsection,
+.menubtn {
+  display: flex;
+  flex-direction: row;
+  /* outline: auto; */
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: typography;
+}
+.headercontainer {
+  justify-content: space-between;
+  /* background-color: grey; */
+  overflow: hidden;
+  padding: 10px;
+}
+.leftsection .p1 {
+  padding-left: 15px;
+  font-family: lato;
+  font-size: 18px;
+  color: #142249;
+}
+
+.logoimg {
+  width: 3rem;
+  overflow: hidden;
+  filter: drop-shadow(0 0 0.75rem rgba(117, 216, 3, 2));
+}
+.rightsection {
+  gap: 2rem;
+  padding: 1em;
+}
+.menubtn {
+  gap: 1em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-weight: 16px;
+}
+.menubtn > a:hover {
+  background-color: rgba(128, 128, 128, 0.139);
+  border-bottom: 3px solid #142249;
+}
+.showmenu > a:hover {
+  background-color: rgba(128, 128, 128, 0.139);
+  border-bottom: 3px solid #142249;
+}
+div > a {
+  padding: 5px;
+  text-decoration: none;
+  color: #142249;
+}
+
+.signinbtn {
+  padding: 5px;
+  border: solid 1px #142249;
+  background-color: #142249;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  position: absolute;
+  top: 1.5%;
+  right: 10%;
+}
+.hamburger span {
+  font-size: 40px;
+}
+.showmenu {
+  display: flex;
+  /* width: 100%; */
+  flex-direction: column;
+  position: absolute;
+  top: 7%;
+  right: 0%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 200;
+  font-weight: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .menubtn a {
+    width: 100%;
+  }
+  .menubtn {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 200;
+    font-weight: 12px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .menubtn .active {
+    display: flex;
+  }
+  .signinbtncontainer {
+    display: none;
+  }
+}
